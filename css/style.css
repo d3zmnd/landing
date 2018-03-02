@@ -461,9 +461,14 @@ a:hover {
 .section-line{
 	margin: 0;
 	padding: 0;
-	
+	background: #2d3e50;
+	justify-content: flex-start;
+	text-align: left;
 }
-
+.line a{
+	
+	color: #e1e2e4;
+	}
 @media all and (max-width: 767px) {
 	.btn-nav {
 		display: block;
