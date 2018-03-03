@@ -362,7 +362,10 @@ a:hover {
 	margin: 0;
 }
 .people-holder{
-
+}
+.information-box{
+	display: flex;
+	flex-direction: row;
 }
 .section-footer{
 	background: #ecf0f1;
@@ -381,8 +384,8 @@ a:hover {
 
 }
 .contactform{
-	margin: 0 auto;
-	padding: 50px 0 0 0;
+	margin: 0 0 0 0;
+	padding: 53px 0 0 0;
 	border-radius: 2px;
 	position: relative;
 	
@@ -401,16 +404,17 @@ a:hover {
 	line-height: 43px;
 	outline-width: 215px;
 	font-style: italic;
-	float:left;
+	
 
 }
 .contactform textarea{
 	height: 150px;
+	width: 460px;
 	max-width: 100% !important;
 	max-height: 300px;
 	min-height: 50px;
 	resize:vertical;
-	margin: 0 20px 20px 0;
+	
 }
 .input {
 	display: flex;
@@ -421,13 +425,13 @@ a:hover {
 .contactform input[type=submit]{
 	display:inline-block;
 	float: right;
-	width: 115px;
+	width: 114px;
 	text-transform: uppercase;
 	color: #fff;
 	padding: 0;
 	font-size: 13px;
 	border: 0;
-	line-height: 40px;
+	line-height: 43px;
 	margin: 0 auto;
 	background: #1bbc9b;
 	cursor: pointer;
@@ -439,12 +443,38 @@ a:hover {
 }
 .information h3{
 	text-transform: uppercase;
+	margin: 0 0 0 0 ;
+	padding: 53px 0 24px 20px;
+	font-weight: 400;
 }
 .information ul{
 	list-style: none;
+	margin: 0;
+    padding: 0 0 0 20px;
+    
 }
-.information i{
-	margin: 3px 0 0 0;
+.information ul li{
+	padding: 0 0 8px 0;
+	margin: 0;
+}
+.information ul li i{
+	padding: 0 5px 0 0;
+	margin: 0;
+}
+.fart{
+	padding: 0 5px 0 0;
+	margin: 0;
+}
+/*.information ul ul li i{
+	padding: 0 0 0 20px;
+}
+.information ul li{
+	padding: 0 0 0 35px;
+}
+}
+.information ul ul li i{
+	margin: 0;
+	padding: 0 5px 0 20px;*/
 }
 /*.contactform fieldset .input input{
 	margin: 0 0 20px 20px;
@@ -462,13 +492,95 @@ a:hover {
 	margin: 0;
 	padding: 0;
 	background: #2d3e50;
+	
+}
+.contain{
+	margin: auto;
+    width: 100%;
+    display: flex;
 	justify-content: flex-start;
 	text-align: left;
+    flex-direction: row;
 }
 .line a{
-	
+	text-decoration: none;
 	color: #e1e2e4;
+	margin: 0 0 0 8px;
+	font-size: 14px;
 	}
+.copy p{
+	margin: 0 0 0 40px;
+	padding: 0;
+	color: #e1e2e4;
+	font-size: 14px;
+	}
+
+.btn-l{
+	margin: 20px 42px 20px 0;
+	position: inherit;
+	width: 44px;
+	height: 44px;
+	background: #1bbc9b;
+transition:All 0.3331s ease;
+-webkit-transition:All 0.3331s ease;
+-moz-transition:All 0.3331s ease;
+-o-transition:All 0.3331s ease;
+transform: rotate(0deg) scale(0.78) skew(1deg) translate(0px);
+-webkit-transform: rotate(0deg) scale(0.78) skew(1deg) translate(0px);
+-moz-transform: rotate(0deg) scale(0.78) skew(1deg) translate(0px);
+-o-transform: rotate(0deg) scale(0.78) skew(1deg) translate(0px);
+-ms-transform: rotate(0deg) scale(0.78) skew(1deg) translate(0px);
+}
+.btn-l:hover{
+	transform: rotate(0deg) scale(1.016) skew(1deg) translate(0px);
+-webkit-transform: rotate(0deg) scale(1.016) skew(1deg) translate(0px);
+-moz-transform: rotate(0deg) scale(1.016) skew(1deg) translate(0px);
+-o-transform: rotate(0deg) scale(1.016) skew(1deg) translate(0px);
+-ms-transform: rotate(0deg) scale(1.016) skew(1deg) translate(0px);
+}
+.btn-l span,
+.btn-l:before{
+	content: '';
+    margin: 1px 2px 3px 5px;
+    padding: 2px 8px 1px 20px;
+    position: absolute;
+    height: 5px;
+    width: 1px;
+    top: 50%;
+    background: white;
+    border-radius: 2px;
+    transition: all 0.4s;
+}
+.btn-l span{
+	margin-top: -3px;
+    margin-left: 12px;
+    transform: rotate(60deg);
+	background: white;
+
+}
+.btn-l:before{
+	margin-top: -3px;
+    margin-left: 0;
+    transform: rotate(-60deg);
+    /*background: #c0c0c0;*/
+}
+.btn-l:hover span{
+	transform: rotate(60deg) scale(1.016) skew(1deg) translate(0px);
+-webkit-transform: rotate(60deg) scale(1.016) skew(1deg) translate(0px);
+-moz-transform: rotate(60deg) scale(1.016) skew(1deg) translate(0px);
+-o-transform: rotate(60deg) scale(1.016) skew(1deg) translate(0px);
+-ms-transform: rotate(60deg) scale(1.016) skew(1deg) translate(0px);
+background: #2d3e50;
+}
+.btn-l:hover:before{
+		transform: rotate(-60deg) scale(1.016) skew(1deg) translate(0px);
+-webkit-transform: rotate(-60deg) scale(1.016) skew(1deg) translate(0px);
+-moz-transform: rotate(-60deg) scale(1.016) skew(1deg) translate(0px);
+-o-transform: rotate(-60deg) scale(1.016) skew(1deg) translate(0px);
+-ms-transform: rotate(-60deg) scale(1.016) skew(1deg) translate(0px);
+background: #2d3e50;
+}
+
 @media all and (max-width: 767px) {
 	.btn-nav {
 		display: block;
