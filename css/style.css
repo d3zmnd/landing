@@ -287,6 +287,7 @@ a:hover {
 	border-radius: 100%;
 	margin: 0 0 15px;
 	color: #fff;
+	
 }
 .portfolio-item:hover .hover{
 	transform: translateY(0);
@@ -329,9 +330,10 @@ a:hover {
 	left: 50%;
 	background: rgba(22,160,134, 0.8);
 	display: flex;
-	transform: translate(-50%, -50%);
+	transform: scale(1.641, 1.366) translate(-30%, -30%);
 	opacity: 0;
 	transition: opacity 0.3s ease;
+	
 }
 .person-block .image:hover .social {
 	opacity: 1;
@@ -375,7 +377,7 @@ a:hover {
 	text-align: center;
 	margin: 0 0 40px;
 	color: #444444;
-	overflow: hidden;
+	
 }
 .footer-section h1{
 	margin: 0 0 10px;
@@ -385,9 +387,10 @@ a:hover {
 }
 .contactform{
 	margin: 0 0 0 0;
-	padding: 53px 0 0 0;
+	padding: 0 0 0 0;
 	border-radius: 2px;
 	position: relative;
+	flex-wrap: wrap;
 	
 }
 
@@ -404,8 +407,11 @@ a:hover {
 	line-height: 43px;
 	outline-width: 215px;
 	font-style: italic;
-	
-
+}
+.contactform input[type=text],
+.contactform input[type=email]{
+	flex-basis: 48%;
+	width: 232px;
 }
 .contactform textarea{
 	height: 150px;
@@ -444,7 +450,7 @@ a:hover {
 .information h3{
 	text-transform: uppercase;
 	margin: 0 0 0 0 ;
-	padding: 53px 0 24px 20px;
+	padding: 0 0 24px 20px;
 	font-weight: 400;
 }
 .information ul{
@@ -537,6 +543,7 @@ transform: rotate(0deg) scale(0.78) skew(1deg) translate(0px);
 -moz-transform: rotate(0deg) scale(1.016) skew(1deg) translate(0px);
 -o-transform: rotate(0deg) scale(1.016) skew(1deg) translate(0px);
 -ms-transform: rotate(0deg) scale(1.016) skew(1deg) translate(0px);
+	border-radius: 10px;
 }
 .btn-l span,
 .btn-l:before{
