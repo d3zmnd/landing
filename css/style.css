@@ -407,11 +407,18 @@ a:hover {
 	line-height: 43px;
 	outline-width: 215px;
 	font-style: italic;
+	color:#000000;
+	font-size: 18px;
+	text-indent: 4px;
+
 }
 .contactform input[type=text],
 .contactform input[type=email]{
 	flex-basis: 48%;
 	width: 232px;
+	color:#000000;
+	font-size: 18px;
+	text-indent: 4px;
 }
 .contactform textarea{
 	height: 150px;

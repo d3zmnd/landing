@@ -1,43 +1,27 @@
-// work 1
-// var day = prompt('Какой сегодня день?');
-// alert (day);
+const btn = document.querySelector('.btn-nav');
+		const holder = document.body;
 
-// work 2
-// *1
-// var role = prompt('Введите имя пользователя','Гость, Директор или оставить пустым');
-// if (role == 'Гость') { 
-// alert('Привет');
-// } else if (role == 'Директор') {
-//   alert('Здравствуйте');
-// } else if (role == '') {
-//   alert('Познакомимся?');
-// } else {
-//   alert('');
-// }
+		btn.addEventListener('click', (e)=>{
+			e.preventDefault();
+			holder.classList.toggle('nav-active');
+		})
 
-// *2
-// var role = prompt('Имя пользователя')
-// role == 'Гость'? alert('Привет'):role == 'Директор'? alert ('Здравствуйте'): role==''? alert('Познакомимся?'):alert('');
 
-// work 3
-// var name = prompt('Какое официальное названия JavaScript?');
-// if (name =='EcmaScript'){
-// 	alert('Совершенно верно!');
-// } else alert('Не знаете EcmaScript?');
 
-// work 4
+ submit.onclick=function() {
+    alert( 'Achtung! Please try again later.' );
+  };
+var filter_select_el = document.getElementById('filter-list');
+var items_el = document.getElementById('portfolio');
 
-// var role = prompt('Кто пришел?');
-// if (role == 'Админ') { 
-// 	var pass = prompt('Пароль')
-// 	if( pass = 'Черный Властелин'){
-// 		alert('Добро пожаловать!');
-// 	}
-// } else if (role == 'Отмена') {
-//   alert('Вход отменен');
-//   } else {
-//   alert('Я вас не знаю');
-// }
-
-// work 5
-
+filter_select_el.onchange = function() {
+	console.log(this.value);
+  var items = items_el.getElementsByClassName('portfolio-item');
+  for (var i=0; i<items.length; i++) {
+  	if (items[i].classList.contains(this.value)) {
+    	items[i].style.display = 'block';
+    } else {
+    	items[i].style.display = 'none';
+    }
+  }
+};
